@@ -1,4 +1,4 @@
-# Pterodactyl Panel
+# Athena-Panel
 
 ## Description
 This project is a web-based panel for managing Pterodactyl servers, providing users with an intuitive interface to control their game servers.
