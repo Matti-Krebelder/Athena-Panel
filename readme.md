@@ -1,5 +1,5 @@
 # Athena-Panel
-
+![App Screenshot](http://clara.devsconnect.de:2000/images/athena-panel.png)
 ## Description
 This project is a web-based panel for managing Pterodactyl servers, providing users with an intuitive interface to control their game servers.
 
