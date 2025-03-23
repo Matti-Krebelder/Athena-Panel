@@ -31,6 +31,14 @@ This project is a web-based panel for managing Pterodactyl servers, providing us
 - Access the panel through your web browser.
 - Use the login form to authenticate and manage your servers.
 
+## Screenshots
+
+![App Screenshot](http://clara.devsconnect.de:2000/images/img1.png)
+![App Screenshot](http://clara.devsconnect.de:2000/images/img2.png)
+![App Screenshot](http://clara.devsconnect.de:2000/images/img3.png)
+![App Screenshot](http://clara.devsconnect.de:2000/images/img4.png)
+![App Screenshot](http://clara.devsconnect.de:2000/images/img5.png)
+
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for any suggestions.
 
