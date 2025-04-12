@@ -61,6 +61,7 @@ if ($auth->isLoggedIn()) {
     exit;
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
