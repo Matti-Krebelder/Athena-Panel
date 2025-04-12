@@ -5,41 +5,41 @@
     min-height: 100vh;
     padding: 2rem 0;
     background: radial-gradient(circle at top right, rgba(115, 102, 255, 0.1), transparent 70%),
-                radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.1), transparent 70%);
-  }
-  
-  .login-card {
+    radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.1), transparent 70%);
+}
+
+.login-card {
     width: 100%;
     max-width: 450px;
     overflow: hidden;
     position: relative;
-  }
-  
-  .login-header {
+}
+
+.login-header {
     text-align: center;
     margin-bottom: 2rem;
-  }
-  
-  .login-title {
+}
+
+.login-title {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-  }
-  
-  .login-subtitle {
+}
+
+.login-subtitle {
     color: var(--text-secondary);
-  }
-  
-  .toggle-container {
+}
+
+.toggle-container {
     display: flex;
     border-radius: var(--border-radius);
     overflow: hidden;
     margin-bottom: 2rem;
     background-color: rgba(15, 15, 19, 0.5);
     position: relative;
-  }
-  
-  .toggle-btn {
+}
+
+.toggle-btn {
     flex: 1;
     padding: 1rem;
     text-align: center;
@@ -48,13 +48,13 @@
     position: relative;
     z-index: 1;
     font-weight: 500;
-  }
-  
-  .toggle-btn.active {
+}
+
+.toggle-btn.active {
     color: var(--text-primary);
-  }
-  
-  .toggle-slider {
+}
+
+.toggle-slider {
     position: absolute;
     height: 100%;
     width: 50%;
@@ -63,68 +63,68 @@
     left: 0;
     top: 0;
     transition: transform var(--transition-speed);
-  }
-  
-  .toggle-slider.right {
+}
+
+.toggle-slider.right {
     transform: translateX(100%);
-  }
-  
-  .form-input {
+}
+
+.form-input {
     position: relative;
     margin-bottom: 1.5rem;
-  }
-  
-  .form-input i {
+}
+
+.form-input i {
     position: absolute;
     left: 1rem;
     top: 50%;
     transform: translateY(-50%);
     color: var(--text-secondary);
-  }
-  
-  .input-with-icon {
+}
+
+.input-with-icon {
     padding-left: 2.75rem;
-  }
-  
-  .divider {
+}
+
+.divider {
     display: flex;
     align-items: center;
     margin: 1.5rem 0;
     color: var(--text-secondary);
-  }
-  
-  .divider::before,
-  .divider::after {
+}
+
+.divider::before,
+.divider::after {
     content: "";
     flex: 1;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .divider::before {
+}
+
+.divider::before {
     margin-right: 1rem;
-  }
-  
-  .divider::after {
+}
+
+.divider::after {
     margin-left: 1rem;
-  }
-  
-  .form-footer {
+}
+
+.form-footer {
     text-align: center;
     margin-top: 1.5rem;
     color: var(--text-secondary);
-  }
-  
-  .form-footer a {
+}
+
+.form-footer a {
     color: var(--accent-primary);
     text-decoration: none;
-  }
-  
-  .form-footer a:hover {
+}
+
+.form-footer a:hover {
     text-decoration: underline;
-  }
-  
-  .glow {
+}
+
+.glow {
     position: absolute;
     width: 200px;
     height: 200px;
@@ -133,15 +133,15 @@
     filter: blur(100px);
     opacity: 0.15;
     z-index: -1;
-  }
-  
-  .glow-1 {
+}
+
+.glow-1 {
     top: -50px;
     left: -50px;
-  }
-  
-  .glow-2 {
+}
+
+.glow-2 {
     bottom: -50px;
     right: -50px;
     background: var(--accent-secondary);
-  }
+}

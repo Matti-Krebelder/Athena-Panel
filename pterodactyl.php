@@ -15,7 +15,7 @@ class PterodactylAPI {
 
     /**
      * Set client API key for user-specific operations
-     * 
+     *
      * @param string $apiKey The client API key
      */
     public function setClientApiKey($apiKey) {
@@ -24,7 +24,7 @@ class PterodactylAPI {
 
     /**
      * Create a new user in Pterodactyl
-     * 
+     *
      * @param string $username Username
      * @param string $email Email address
      * @param string $firstName First name
@@ -50,7 +50,7 @@ class PterodactylAPI {
 
     /**
      * Get a user by ID
-     * 
+     *
      * @param int $userId User ID
      * @return array|null User data or null on failure
      */
@@ -61,7 +61,7 @@ class PterodactylAPI {
 
     /**
      * Update a user
-     * 
+     *
      * @param int $userId User ID
      * @param array $data Data to update
      * @return array|null Response data or null on failure
@@ -73,7 +73,7 @@ class PterodactylAPI {
 
     /**
      * Delete a user
-     * 
+     *
      * @param int $userId User ID
      * @return array|null Response data or null on failure
      */
@@ -84,7 +84,7 @@ class PterodactylAPI {
 
     /**
      * Create a server
-     * 
+     *
      * @param array $data Server configuration data
      * @return array|null Response data or null on failure
      */
@@ -95,7 +95,7 @@ class PterodactylAPI {
 
     /**
      * Get all servers
-     * 
+     *
      * @param int $page Page number
      * @return array|null Servers data or null on failure
      */
@@ -106,7 +106,7 @@ class PterodactylAPI {
 
     /**
      * Get a server by ID
-     * 
+     *
      * @param int $serverId Server ID
      * @return array|null Server data or null on failure
      */
@@ -117,7 +117,7 @@ class PterodactylAPI {
 
     /**
      * Update server details
-     * 
+     *
      * @param int $serverId Server ID
      * @param array $data Data to update
      * @return array|null Response data or null on failure
@@ -129,7 +129,7 @@ class PterodactylAPI {
 
     /**
      * Update server build configuration
-     * 
+     *
      * @param int $serverId Server ID
      * @param array $data Build configuration data
      * @return array|null Response data or null on failure
@@ -141,7 +141,7 @@ class PterodactylAPI {
 
     /**
      * Suspend a server
-     * 
+     *
      * @param int $serverId Server ID
      * @return array|null Response data or null on failure
      */
@@ -152,7 +152,7 @@ class PterodactylAPI {
 
     /**
      * Unsuspend a server
-     * 
+     *
      * @param int $serverId Server ID
      * @return array|null Response data or null on failure
      */
@@ -163,7 +163,7 @@ class PterodactylAPI {
 
     /**
      * Delete a server
-     * 
+     *
      * @param int $serverId Server ID
      * @param bool $force Force delete
      * @return array|null Response data or null on failure
@@ -179,7 +179,7 @@ class PterodactylAPI {
 
     /**
      * Get server allocations
-     * 
+     *
      * @param int $nodeId Node ID
      * @return array|null Allocations data or null on failure
      */
@@ -190,7 +190,7 @@ class PterodactylAPI {
 
     /**
      * Get all nodes
-     * 
+     *
      * @return array|null Nodes data or null on failure
      */
     public function getNodes() {
@@ -200,7 +200,7 @@ class PterodactylAPI {
 
     /**
      * Get server utilization using client API
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @return array|null Utilization data or null on failure
      */
@@ -211,7 +211,7 @@ class PterodactylAPI {
 
     /**
      * Get server details using client API
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @return array|null Server details or null on failure
      */
@@ -222,7 +222,7 @@ class PterodactylAPI {
 
     /**
      * Send command to server console
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @param string $command Command to send
      * @return array|null Response data or null on failure
@@ -237,7 +237,7 @@ class PterodactylAPI {
 
     /**
      * Change server power state
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @param string $state Power state (start, stop, restart, kill)
      * @return array|null Response data or null on failure
@@ -257,7 +257,7 @@ class PterodactylAPI {
 
     /**
      * List files in a directory
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @param string $directory Directory path
      * @return array|null Files list or null on failure
@@ -269,7 +269,7 @@ class PterodactylAPI {
 
     /**
      * Get file contents
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @param string $filePath File path
      * @return string|null File contents or null on failure
@@ -281,7 +281,7 @@ class PterodactylAPI {
 
     /**
      * Write file contents
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @param string $filePath File path
      * @param string $content File content
@@ -298,7 +298,7 @@ class PterodactylAPI {
 
     /**
      * Create a directory
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @param string $path Directory path
      * @param string $name Directory name
@@ -315,7 +315,7 @@ class PterodactylAPI {
 
     /**
      * Delete files
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @param string $directory Directory path
      * @param array $files Files to delete
@@ -332,7 +332,7 @@ class PterodactylAPI {
 
     /**
      * Get server backups
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @return array|null Backups data or null on failure
      */
@@ -343,7 +343,7 @@ class PterodactylAPI {
 
     /**
      * Create server backup
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @return array|null Response data or null on failure
      */
@@ -354,7 +354,7 @@ class PterodactylAPI {
 
     /**
      * Delete server backup
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @param string $backupId Backup ID
      * @return array|null Response data or null on failure
@@ -366,7 +366,7 @@ class PterodactylAPI {
 
     /**
      * Get server databases
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @return array|null Databases data or null on failure
      */
@@ -377,7 +377,7 @@ class PterodactylAPI {
 
     /**
      * Create server database
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @param string $databaseName Database name
      * @param string $remoteHost Remote host
@@ -394,7 +394,7 @@ class PterodactylAPI {
 
     /**
      * Delete server database
-     * 
+     *
      * @param string $serverIdentifier Server identifier
      * @param string $databaseId Database ID
      * @return array|null Response data or null on failure
@@ -406,7 +406,7 @@ class PterodactylAPI {
 
     /**
      * Check if user has access to server
-     * 
+     *
      * @param int $userId User ID
      * @param string $serverIdentifier Server identifier
      * @return bool True if has access, false otherwise
@@ -414,23 +414,23 @@ class PterodactylAPI {
     public function userHasServerAccess($userId, $serverIdentifier) {
         // Get all servers for user
         $servers = $this->getUserServers($userId);
-        
+
         if (!$servers || !isset($servers['data'])) {
             return false;
         }
-        
+
         foreach ($servers['data'] as $server) {
             if ($server['attributes']['identifier'] == $serverIdentifier) {
                 return true;
             }
         }
-        
+
         return false;
     }
 
     /**
      * Get all servers for a user
-     * 
+     *
      * @param int $userId User ID
      * @return array|null Servers data or null on failure
      */
@@ -441,7 +441,7 @@ class PterodactylAPI {
 
     /**
      * Send request to application API
-     * 
+     *
      * @param string $endpoint API endpoint
      * @param string $method HTTP method
      * @param array $data Request data
@@ -449,7 +449,7 @@ class PterodactylAPI {
      */
     private function sendRequest($endpoint, $method = 'GET', $data = []) {
         $ch = curl_init($this->apiUrl . $endpoint);
-        
+
         $headers = [
             'Authorization: Bearer ' . $this->apiKey,
             'Content-Type: application/json',
@@ -458,7 +458,7 @@ class PterodactylAPI {
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-        
+
         if ($method === 'POST') {
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
@@ -483,7 +483,7 @@ class PterodactylAPI {
 
     /**
      * Send request to client API
-     * 
+     *
      * @param string $endpoint API endpoint
      * @param string $method HTTP method
      * @param array $data Request data
@@ -496,7 +496,7 @@ class PterodactylAPI {
         }
 
         $ch = curl_init($this->clientUrl . $endpoint);
-        
+
         $headers = [
             'Authorization: Bearer ' . $this->clientApiKey,
             'Content-Type: application/json',
@@ -505,7 +505,7 @@ class PterodactylAPI {
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-        
+
         if ($method === 'POST') {
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));

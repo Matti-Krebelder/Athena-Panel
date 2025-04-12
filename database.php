@@ -34,12 +34,12 @@ class Database {
     public function registerUser($username, $password, $email, $firstName, $lastName, $pterodactylUuid, $pterodactylId) {
         try {
             $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-            
+
             $stmt = $this->db->prepare("
                 INSERT INTO users (username, password, email, first_name, last_name, pterodactyl_uuid, pterodactyl_id)
                 VALUES (:username, :password, :email, :firstName, :lastName, :pterodactylUuid, :pterodactylId)
             ");
-            
+
             $stmt->bindParam(':username', $username);
             $stmt->bindParam(':password', $hashedPassword);
             $stmt->bindParam(':email', $email);
@@ -47,7 +47,7 @@ class Database {
             $stmt->bindParam(':lastName', $lastName);
             $stmt->bindParam(':pterodactylUuid', $pterodactylUuid);
             $stmt->bindParam(':pterodactylId', $pterodactylId);
-            
+
             return $stmt->execute();
         } catch (PDOException $e) {
             return false;
